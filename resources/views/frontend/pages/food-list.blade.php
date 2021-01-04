@@ -16,12 +16,20 @@
     <div class="container-fluid container-top">
         <div class="row" style="height: 677px; overflow: hidden;">
             <a href="">
-                <div class="col-md-5 nopadding features-intro-img">
-                    <div class="features">
+                <div class="col-md-5 nopadding features-intro-img" style="height: 350px !important;">
+{{--                    <div class="features">--}}
                         @php
                             $category_image = \App\Category::where('id',$category_id)->pluck('image')->first();
+
+                            $sub_category_name = \App\SubCategory::where('category_id',$category_id)->where('id',$sub_category_id)->pluck('name')->first()
                         @endphp
-                        <img src="{{asset('uploads/category/'.$category_image)}}" alt="" style="width: 100%;height:680px">
+{{--                        <img src="{{asset('uploads/category/'.$category_image)}}" alt="" style="width: 100%;height:680px">--}}
+                        @if($sub_category_name == 'Hot Sub')
+                            <iframe src="https://www.youtube.com/embed/stMwSU4Dlok?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" height="278" style="width: 100%;"></iframe>
+                        @endif
+                        @if($sub_category_name == 'Cold Sub')
+                            <iframe src="https://www.youtube.com/embed/uOp2KSVeLOs?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" height="278" style="width: 100%;"></iframe>
+                        @endif
                         <div class="text">
                             @if(!empty($category_id) && empty($sub_category_id))
                                 {{\App\Category::where('id',$category_id)->pluck('name')->first()}}
@@ -43,7 +51,7 @@
                             </div>
                             <p class="overlay-p">See more...</p>
                         </div>
-                    </div>
+{{--                    </div>--}}
                 </div>
             </a>
             <a href="">
@@ -53,7 +61,13 @@
                         <a href="{{route('order.edit.single',$product->slug)}}">
                             <div class="col-md-6 nopadding food-list" style="border: 1px solid;">
                                 <h4 class="food-list-header-text">{{$product->name}}</h4>
+                                @if($product->name == 'Sub Hot Product 1')
+                                <iframe src="https://www.youtube.com/embed/ec0OQbp06VQ?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" style="width: 100%;height: 245px"></iframe>
+                                @elseif($product->name == 'Roast Beef & Swiss of SubKing')
+                                <iframe src="https://www.youtube.com/embed/7MkIA5vc83Y?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" style="width: 100%;height: 245px"></iframe>
+                                @else
                                 <img src="{{asset('uploads/product/'.$product->image)}}" alt="" style="width: 100%;height: 250px">
+                                @endif
                             </div>
                         </a>
                         @endforeach
