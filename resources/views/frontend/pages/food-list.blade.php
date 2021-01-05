@@ -62,9 +62,19 @@
                             <div class="col-md-6 nopadding food-list" style="border: 1px solid;">
                                 <h4 class="food-list-header-text">{{$product->name}}</h4>
                                 @if($product->name == 'Sub Hot Product 1')
-                                <iframe src="https://www.youtube.com/embed/ec0OQbp06VQ?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" style="width: 100%;height: 245px"></iframe>
+                                    <iframe src="https://www.youtube.com/embed/ec0OQbp06VQ?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" style="width: 100%;height: 245px"></iframe>
+                                    <div class="overlay">
+                                        <div class="text">
+                                            {{$product->name}}
+                                        </div>
+                                    </div>
                                 @elseif($product->name == 'Roast Beef & Swiss of SubKing')
-                                <iframe src="https://www.youtube.com/embed/7MkIA5vc83Y?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" style="width: 100%;height: 245px"></iframe>
+                                    <iframe src="https://www.youtube.com/embed/7MkIA5vc83Y?rel=0&amp;showinfo=0&autoplay=1&mute=1&constrols=0" allow="autoplay" frameborder="0" allowfullscreen="" style="width: 100%;height: 245px"></iframe>
+                                    <div class="overlay">
+                                        <div class="text">
+                                            {{$product->name}}
+                                        </div>
+                                    </div>
                                 @else
                                 <img src="{{asset('uploads/product/'.$product->image)}}" alt="" style="width: 100%;height: 250px">
                                 @endif
