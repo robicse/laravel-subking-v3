@@ -11,7 +11,7 @@
                     <div id="sub_content" style="text-align: left;padding: 0px;">
                         <h1 style="font-weight:500">KING OF SUBS</h1>
                         <h2 style="font-weight:400; color:#fff">100% Fresh Food</h2>
-                        
+
                         <a id="happy" class="btn btn-danger" style="padding: 14px 40px;background-color: #C58E33;border: 0px;color: #0c0c0c;font-weight: bold" href="{{Session::get('rid') ? route('menu') : route('map')}}">Order Now</a>
 
                         {{--<form method="post" action="list_page.html">
@@ -90,50 +90,15 @@
     {{--    </div><!-- End container -->--}}
 
 
-    <div class="container-fluid">
-        <div class="row" style="height:600px;">
-            <div class="col-md-6 nopadding features-intro-img">
-                <div class="features-content" style="height:600px;">
-                    <h3>Banana Churro Shake</h3>
-                    <p>
-                        Creamy vanilla custard hand-spun with real bananas, topped with caramel, and a warm, cinnamon sugar Churro.
-                    </p>
-                    {{--                    <p>--}}
-                    {{--                        Per ea erant aeque corpora, an agam tibique nec. At recusabo expetendis vim. Tractatos principes mel te, dolor solet viderer usu ad.--}}
-                    {{--                    </p>--}}
-                    <a href="{{route('menu')}}">  <div class="btn_1" style="height: 55px;width: 175px;padding-top: 17px;color: #0c0c0c;font-size: 15px;font-weight: bold"> Order Now</div></a>
-                </div>
-            </div>
-            <div class="col-md-6 nopadding" >
-                <div class="features">
-                    <img src="{{asset('frontend/img/home/ff6107-splendid-table-tehina-shakes-2panel.png')}}" alt="" style="width: 100%;height:600px";>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
 
-        <div class="row" style="height:600px;">
-            <div class="col-md-6 nopadding" >
-                <div class="features">
-                    <img src="{{asset('frontend/img/home/Print-Summer-Smash-Burger.jpg')}}" alt="" style="width: 100%;height:600px";>
-                </div>
-            </div>
-            <div class="col-md-6 nopadding features-intro-img">
-                <div class="features-content" style="height:600px;">
-                    <h3>$10 Burger & Fry Pairing</h3>
-                    <p>
-                        Try our hormone-free & antibiotic-free Subking Cheeseburger paired with Fresh-Cut Fries, made with only potatoes & salt, for $10.
-                    </p>
-                    {{--                        <p>--}}
-                    {{--                            Per ea erant aeque corpora, an agam tibique nec. At recusabo expetendis vim. Tractatos principes mel te, dolor solet viderer usu ad.--}}
-                    {{--                        </p>--}}
-                    <a href="{{route('menu')}}">  <div class="btn_1" style="height: 55px;width: 175px;padding-top: 17px;color: #0c0c0c;font-size: 15px;font-weight: bold"> Order Now</div></a>
-                </div>
-            </div>
 
-        </div>
-    </div>
+
+
+
+
+
+
+
     <div class="container-fluid">
         <div class="row" style="height:600px;">
             <div class="col-md-6 nopadding features-intro-img ">
@@ -151,6 +116,47 @@
             </div>
         </div>
     </div>
+{{--    <div class="container-fluid">--}}
+{{--        <div class="row" style="height:600px;">--}}
+{{--            <div class="col-md-6 nopadding features-intro-img">--}}
+{{--                <div class="features-content" style="height:600px;">--}}
+{{--                    <h3>Banana Churro Shake</h3>--}}
+{{--                    <p>--}}
+{{--                        Creamy vanilla custard hand-spun with real bananas, topped with caramel, and a warm, cinnamon sugar Churro.--}}
+{{--                    </p>--}}
+{{--                    <a href="{{route('menu')}}">  <div class="btn_1" style="height: 55px;width: 175px;padding-top: 17px;color: #0c0c0c;font-size: 15px;font-weight: bold"> Order Now</div></a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-6 nopadding" >--}}
+{{--                <div class="features">--}}
+{{--                    <img src="{{asset('frontend/img/home/ff6107-splendid-table-tehina-shakes-2panel.png')}}" alt="" style="width: 100%;height:600px";>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+    <div class="container-fluid">
+
+        <div class="row" style="height:600px;">
+            <div class="col-md-6 nopadding" >
+                <div class="features">
+                    <img src="{{asset('frontend/img/home/Print-Summer-Smash-Burger.jpg')}}" alt="" style="width: 100%;height:600px";>
+                </div>
+            </div>
+            <div class="col-md-6 nopadding features-intro-img">
+                <div class="features-content" style="height:600px;">
+                    <h3>$10 Sub & Fry Pairing</h3>
+                    <p>
+                        Try our hormone-free & antibiotic-free Subking Sub paired with Fresh-Cut Fries, made with only potatoes & salt, for $10.
+                    </p>
+                    {{--                        <p>--}}
+                    {{--                            Per ea erant aeque corpora, an agam tibique nec. At recusabo expetendis vim. Tractatos principes mel te, dolor solet viderer usu ad.--}}
+                    {{--                        </p>--}}
+                    <a href="{{route('menu')}}">  <div class="btn_1" style="height: 55px;width: 175px;padding-top: 17px;color: #0c0c0c;font-size: 15px;font-weight: bold"> Order Now</div></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row" style="height:600px;">
             <div class="col-md-6 nopadding" >
@@ -160,9 +166,9 @@
             </div>
             <div class="col-md-6 nopadding features-intro-img">
                 <div class="features-content" style="height:600px;">
-                    <h3>Best Burger Joint</h3>
+                    <h3>Best Sub Joint</h3>
                     <p>
-                        Subking was awarded  "Best Burger Joint" by the 5th Annual Chain Reaction Report for our commitment to only serve responsibly raised beef.
+                        Subking was awarded  "Best Sub Joint" by the 5th Annual Chain Reaction Report for our commitment to only serve responsibly raised beef.
                     </p>
                     {{--                    <a href="{{route('menu')}}">  <div class="btn_1" style="height: 55px;width: 175px;padding-top: 20px;:"> Order Now</div></a>--}}
                 </div>
@@ -196,15 +202,15 @@
             <div class="col-md-4 text-center">
 
                 <img src="{{asset('frontend/img/home/1382541460839.jpeg')}}" alt="" width="300" height="300">
-                <h2 style="color: #0c0c0c;font-size: 32px;font-weight: bold;">Subking Cheeseburger</h2>
+                <h2 style="color: #0c0c0c;font-size: 32px;font-weight: bold;">GRILLED CHICKEN SUB</h2>
             </div>
             <div class="col-md-4 text-center">
                 <img src="{{asset('frontend/img/home/20150702-sous-vide-hamburger-anova-primary-1500x1125.jpg')}}" alt="" width="300" height="300">
-                <h2 style="color: #0c0c0c;font-size: 32px;font-weight: bold;">Subking Cheeseburger</h2>
+                <h2 style="color: #0c0c0c;font-size: 32px;font-weight: bold;">THE ITALIAN SUB</h2>
             </div>
             <div class="col-md-4 text-center">
                 <img src="{{asset('frontend/img/home/1200px-RedDot_Burger.jpg')}}" alt="" width="300" height="300">
-                <h2 style="color: #0c0c0c;font-size: 32px;font-weight: bold;">Subking Cheeseburger</h2>
+                <h2 style="color: #0c0c0c;font-size: 32px;font-weight: bold;">SUBKING REUBEN</h2>
             </div>
             <div class="col-md-12 text-center" style="margin-top: 30px;">
                 <a href="{{route('menu')}}">  <div class="btn_1" style="height: 55px;width: 175px;padding-top: 17px;color: #0c0c0c;font-size: 15px;font-weight: bold"> Order Now</div></a>
