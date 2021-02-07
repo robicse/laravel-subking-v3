@@ -26,9 +26,17 @@
         <div class="row" style="height:500px;">
             <div class="col-md-6 nopadding features-intro-img">
                 <div class="features-content" style="height:500px;">
-                    <h3>Our Story</h3>
+                    <h3>ABOUT US</h3>
                     <p>
-                        Being thoughtful is a core belief that drives our business and our people every day. People are at the heart of everything we do. We realize our actions speak louder than our words. Subking has earned your trust in many ways, including trusting us in procuring clean food for your consumption and maintaining the highest levels of cleanliness, sanitation, and food safety. Many of our locations are now open for dine-in! We are conforming with local and state mandates by reducing our hours of operation and limiting dining room capacity. If you prefer to order food online for pick-up or delivery, you can still place a prepaid order on our app, via Subking.com or through any of our delivery partners. Please visit your local Subking’s Facebook page for more information.
+                        <strong>SUBMARINE KING</strong> was first originated back in the 70&#39;s based out of Miami Florida. This is where all the
+                        school kids worked to get by to have fun and funds to buy their race car parts and of course the ladies
+                        would have the extra funds to buy their new fancy clothing. So, in short, we decided to bring Submarine
+                        King back and take the name down a notch and be more specific to SUBKING the king of Subs, after all
+                        we made the best submarine subs in Miami Florida. Using only the finest ingredients as always and
+                        freshest meats available, homemade breads, and fresh condiments on a daily basis. All of our fresh cut
+                        vegetables most brought in from local vendors. Our sub rolls are made fresh on a daily basis in house.
+                        Our employees are still working part time as they put themselves through school, and yes, the kids are
+                        still buying parts for their cars and the girls are still fashionably dressing.
                     </p>
                 </div>
             </div>
